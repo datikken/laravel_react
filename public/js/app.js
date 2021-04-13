@@ -69415,20 +69415,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var App = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.memo(function () {
+
+function App() {
   var user = Object(react_redux__WEBPACK_IMPORTED_MODULE_4__["useSelector"])(function (state) {
     return state.user;
   });
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, user.location), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_yandex_maps__WEBPACK_IMPORTED_MODULE_3__["YMaps"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_yandex_maps__WEBPACK_IMPORTED_MODULE_3__["Map"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_yandex_maps__WEBPACK_IMPORTED_MODULE_3__["YMaps"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_yandex_maps__WEBPACK_IMPORTED_MODULE_3__["Map"], {
     className: "yndx_map",
     defaultState: {
       center: [55.75, 37.57],
       zoom: 9
     }
   })));
-});
+}
+
+;
 /* harmony default export */ __webpack_exports__["default"] = (App);
 
 if (document.getElementById('app')) {
